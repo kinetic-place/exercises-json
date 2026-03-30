@@ -32,6 +32,21 @@ npm install @kinetic-place/exercises-json
 
 *(Full documentation and schema examples coming closely...)*
 
+## 🔌 Prefer an API?
+
+See [`@kinetic-place/exercises-api`](https://github.com/kinetic-place/exercises-api) for a free REST API with **search, filtering, and pagination** — powered by Cloudflare Workers.
+
+```bash
+# Search exercises by muscle group
+curl "https://api.kinetic.place/v1/exercises?muscle=chest&limit=5"
+
+# Full-text search
+curl "https://api.kinetic.place/v1/exercises?q=bench+press"
+
+# Combined filters
+curl "https://api.kinetic.place/v1/exercises?muscle=biceps&equipment=dumbbell&level=beginner"
+```
+
 ## 🙏 Acknowledgments
 
 A massive thank you to [wrkout/exercises.json](https://github.com/wrkout/exercises.json) for providing the foundational list of gym exercises that kickstarted this dataset!
